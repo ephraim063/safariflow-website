@@ -707,6 +707,14 @@ nav.scrolled {
 .p-cta-green { background: var(--green); color: #fff; }
 .p-cta-peach { background: var(--peach); color: var(--peach-text); }
 .p-cta-ghost { border: 1px solid var(--border-md); color: var(--text); }
+ #enterprise-card {
+  background: linear-gradient(145deg, #F2FAF5 0%, #E8F5ED 100%);
+  border-color: #C8DED0;
+}
+[data-theme="dark"] #enterprise-card {
+  background: linear-gradient(145deg, #112A18 0%, #162E1C 100%);
+  border-color: rgba(82,183,136,0.2);
+}
 .p-trial {
   text-align: center; margin-top: 20px; padding: 14px 20px;
   background: var(--green-dim); border: 1px solid var(--green-border);
@@ -1246,7 +1254,7 @@ footer {
         </ul>
         <a href="#cta" class="p-cta p-cta-peach">Start Free Trial</a>
       </div>
-      <div class="p-card fade">
+      <div class="p-card fade"id="enterprise-card">
         <div class="p-tier">Enterprise</div>
         <h3>For large operations</h3>
         <p class="p-desc">Custom setup for agencies with advanced needs and larger teams.</p>
