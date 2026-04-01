@@ -133,7 +133,7 @@ a { text-decoration: none; }
 ═══════════════════════════════════════════════════ */
 .container  { max-width: 1280px; margin: 0 auto; padding: 0 40px; }
 .section    { padding: 80px 0; }
-.section-dk { background: var(--dark-bg); }
+.section-dk { background: var(--dark-bg); padding: 80px 0; }
 [data-theme="light"] .section-dk { background: #EFE6CF; }
 
 /* ═══════════════════════════════════════════════════
@@ -528,8 +528,10 @@ nav.scrolled {
   max-width: 460px; margin: 0 auto; line-height: 1.7; font-weight: 400;
   letter-spacing: 0.3px;
 }
-.sh-dk h2 { color: #EEF7F0; }
-.sh-dk p  { color: rgba(238,247,240,0.42); }
+.sh-dk h2 { color: var(--text); }
+.sh-dk p  { color: var(--text-mid); }
+[data-theme="dark"] .sh-dk h2 { color: #EEF7F0; }
+[data-theme="dark"] .sh-dk p  { color: rgba(238,247,240,0.42); }
 
 /* ═══════════════════════════════════════════════════
    WHY SAFARIFLOW — animated stagger
@@ -615,9 +617,9 @@ nav.scrolled {
 .feat-icon { font-size: 20px; margin-bottom: 10px; }
 .feat h3 {
   font-family: 'Playfair Display', serif; font-size: 15px;
-  font-weight: 400; color: var(--dark-text); margin-bottom: 6px; line-height: 1.3;
+  font-weight: 400; color: var(--text); margin-bottom: 6px; line-height: 1.3;
 }
-.feat p { font-size: 12px; color: var(--dark-dim); line-height: 1.7; font-weight: 300; }
+.feat p { font-size: 12px; color: var(--text-mid); line-height: 1.7; font-weight: 300; }
 .feat-pill {
   display: inline-flex; margin-top: 10px; font-size: 9px;
   color: var(--peach); font-weight: 700; background: rgba(240,200,152,0.1);
