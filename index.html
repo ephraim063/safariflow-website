@@ -626,6 +626,18 @@ nav.scrolled {
 .feat {
   background: var(--dark-surface); border: 1px solid var(--dark-border);
   border-radius: var(--radius-lg); padding: 20px 18px; transition: all 0.22s;
+  position: relative;
+}
+.feat-pill {
+  position: absolute; top: 14px; right: 14px;
+  display: inline-flex; font-size: 9px;
+  color: var(--peach); font-weight: 700; background: rgba(240,200,152,0.1);
+  padding: 2px 9px; border-radius: 100px; letter-spacing: 0.5px;
+}
+[data-theme="light"] .feat-pill {
+  color: #7A4010; background: rgba(196,146,42,0.12);
+  border: 1px solid rgba(196,146,42,0.25);
+}
 }
  .feat:hover { background: rgba(255,255,255,0.07); border-color: rgba(240,200,152,0.2); transform: translateY(-2px); }
 .feat.w2 { grid-column: span 1; }
