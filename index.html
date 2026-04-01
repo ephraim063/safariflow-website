@@ -553,6 +553,12 @@ nav.scrolled {
   background: var(--surface); padding: 22px 20px;
   opacity: 0; transform: translateY(14px);
   transition: opacity 0.45s ease, transform 0.45s ease, background 0.2s;
+  position: relative;
+}
+.why-n {
+  position: absolute; top: 14px; right: 16px;
+  font-family: 'Playfair Display', serif; font-size: 12px;
+  font-style: italic; color: var(--peach-dk); margin-bottom: 0;
 }
 .why-card.vis { opacity: 1; transform: translateY(0); }
 .why-card:hover { background: var(--bg-muted); }
@@ -562,8 +568,10 @@ nav.scrolled {
   display: block;
 }
 .why-card h3 {
-  font-family: 'Playfair Display', serif; font-size: 15px;
-  font-weight: 400; color: var(--text); margin-bottom: 6px; line-height: 1.35;
+  font-family: 'Playfair Display', serif; font-size: 17px;
+  font-weight: 400; color: #1B4332; margin-bottom: 6px; line-height: 1.35;
+}
+.why-card p { font-size: 14px; color: #3A5040; line-height: 1.7; font-weight: 300; }
 }
 .why-card p { font-size: 13.5px; color: var(--text-mid); line-height: 1.7; font-weight: 300; }
 
